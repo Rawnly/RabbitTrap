@@ -48,8 +48,8 @@ $(document).ready(function() {
 
 
   $('.particles').particleground({
-    dotColor: '#4E4E4E',
-    lineColor: '#4E4E4E'
+    dotColor: '#131313',
+    lineColor: '#131313'
   })
 
   if ($(window).scrollTop() >= 826) {
@@ -57,7 +57,7 @@ $(document).ready(function() {
   } else {
     $('.menu').css('position', 'absolute').css('height', '100vh');
   }
-  
+
   $(window).scroll(function() {
     if ($(window).scrollTop() >= 826) {
       $('.menu').css('position', 'fixed').css('height', '0px');

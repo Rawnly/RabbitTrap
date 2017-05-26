@@ -1,27 +1,57 @@
-
 /**
-  https://www.stickermule.com/it/unlock?ref_id=6392580701
-
+ * https://www.stickermule.com/it/unlock?ref_id=6392580701
+ *
  * AUTHOR: Federico Vitale - RAWNLY (https://rawnly.com)
  * <fedevitale99@gmail.com>
  */
+ small.hour {
+   font-size: 0.7rem !important;
+ }
 
-#group-title {
-  padding-top    : 0px;
-  color          : #FFF;
-  text-align     : center;
+.titles {
   text-transform : uppercase;
-  font-family    : 'Forista',
-                   sans-serif;
-  font-size      : 3rem;
   letter-spacing : 3px;
 }
 
-.container  #group {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+#group h1 {
+  padding-top    : 0px;
+  font-size      : 3rem;
+  margin-bottom: 0.3em;
+}
+
+#group small:not(.hour) {
+  font-size      : 1.4rem;
+}
+
+#group small::before:not(.hour) {
+  content: '- '
+}
+#group small::after:not(.hour) {
+  content: ' -'
+}
+
+#group {
+  padding    : 0px;
+  color          : #FFF;
+  text-align     : center;
+  text-transform : uppercase;
+  font-family    : 'Raleway',
+                   sans-serif;
+  letter-spacing : 3px;
+  margin: 2em auto;
+}
+
+.container-group {
+  position  : relative;
+  top       : 50%;
+  width     : 100%;
+  transform : translateY(-50%);
+}
+
+body * {
+  color: #fff;
+  font-family: 'Infinity', sans-serif;
+  font-weight: 100;
 }
 
 #spacer {
@@ -29,13 +59,13 @@
 }
 
 #countdown {
+  display        : table;
   position       : sticky;
   width          : 100%;
   margin         : 0 auto;
   text-align     : center;
   text-transform : capitalize;
   font-size      : 2.7vw;
-  display: table;
 }
 
 #countdown div {
@@ -74,7 +104,7 @@
 }
 
 .counter {
-  display: block !important;
+  display : block !important;
 }
 
 @media screen
@@ -101,7 +131,6 @@
     display : none !important;
   }
 }
-
 
 @media screen
        and (max-width : 800px) {

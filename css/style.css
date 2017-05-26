@@ -6,6 +6,46 @@
 /* FONTS FACES */
 
 @font-face {
+  font-family: 'Infinity';
+  src: url('fonts/Infinity/infinity.ttf');
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: url('fonts/Hero/hero.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: url('fonts/Hero/hero-light.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Cabo';
+  src: url('fonts/cabo_rounded/Cabo-Rounded-Regular.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabo';
+  src: url('fonts/cabo_rounded/Cabo-Rounded-Italic.otf');
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'Ancherr';
+  src: url('fonts/Ancherr/Ancherr.ttf');
+}
+
+@font-face {
+  font-family: 'Lugos';
+  src: url('fonts/Lugos/Lugos-regular.otf');
+}
+
+@font-face {
   font-family : 'Flexure';
   src         : url('fonts/HBM Flexure/HBM Flexure.otf');
 }
@@ -229,7 +269,7 @@ footer .footer-inner {
 }
 
 .container.half {
-  width : 50%;
+  width : calc(50% - 50px);
 }
 
 .container.half.right {
@@ -276,8 +316,16 @@ footer .footer-inner {
 
 @media screen
        and (max-width : 1100px) {
+         .no-mobile.restricted {
+           display : none !important;
+         }
   .container.half {
     width   : 100%;
     padding : 0px !important;
   }
+}
+
+[data-font="lugos"],
+[data-font="ancherr"] {
+  text-transform: uppercase;
 }

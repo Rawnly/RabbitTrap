@@ -144,6 +144,12 @@ html {
   font-size   : 18px;
 }
 
+body * {
+  color: #fff;
+  font-family: 'Infinity', sans-serif;
+  font-weight: 100;
+}
+
 body *::selection,
 html *::selection {
   color      : var(--color-lines);
@@ -325,7 +331,6 @@ footer .footer-inner {
   }
 }
 
-[data-font="lugos"],
-[data-font="ancherr"] {
-  text-transform: uppercase;
+.ei-icn.text {
+  top: 7px;
 }

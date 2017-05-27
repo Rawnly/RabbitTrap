@@ -132,6 +132,7 @@ html:root {
     --color-darkbg: #111;
     --color-darken-dark: #0D0C0C;
     --color-overlay: #181818;
+    --color-mix: #121111;
 }
 
 body,
@@ -186,14 +187,13 @@ footer {
   width  : calc(100vw - 30px);
   height: auto;
   padding: 15px;
-  background: var(--color-overlay);
+  background: var(--color-mix);
   text-align: center;
+  border-top: 1px solid rgba(255,255,255,.1);
 }
 
 footer .footer-inner {
   color       : #fff;
-  font-family : monospace,
-                monospace;
 }
 
 /* ME */
@@ -333,4 +333,16 @@ footer .footer-inner {
 
 .ei-icn.text {
   top: 7px;
+}
+
+.no-desk {
+  display: none;
+}
+
+
+.container-group {
+  position  : relative;
+  top       : 50%;
+  width     : 100%;
+  transform : translateY(-50%);
 }

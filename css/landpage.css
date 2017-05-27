@@ -4,50 +4,48 @@
  * AUTHOR: Federico Vitale - RAWNLY (https://rawnly.com)
  * <fedevitale99@gmail.com>
  */
- small.hour {
-   font-size: 0.7rem !important;
- }
+
+.no-desk .container {
+  padding : 0px !important;
+}
 
 .titles {
   text-transform : uppercase;
   letter-spacing : 3px;
 }
 
-#group h1 {
-  padding-top    : 0px;
-  font-size      : 3rem;
-  margin-bottom: 0.3em;
+.group h1 {
+  margin-bottom : 0.3em;
+  padding-top   : 0px;
+  font-size     : 4.5vw;
 }
 
-#group small {
-  font-size      : 1.7vw;
+.group small {
+  font-size : 1.7vw;
 }
 
-#group #sub::before {
-  content: '- '
-}
-#group #sub::after {
-  content: ' -'
+.group #sub::before {
+  content : '- ';
 }
 
-#group {
-  padding    : 0px;
+.group #sub::after {
+  content : ' -';
+}
+
+.group {
+  margin         : 0 auto;
+  padding        : 0px;
   color          : #FFF;
   text-align     : center;
   text-transform : uppercase;
-  font-family    : 'Raleway',
+  font-family    : inherit,
                    sans-serif;
   letter-spacing : 3px;
+}
+
+.sub-group {
   margin: 2em auto;
 }
-
-.container-group {
-  position  : relative;
-  top       : 50%;
-  width     : 100%;
-  transform : translateY(-50%);
-}
-
 
 #spacer {
   width : 100%;
@@ -91,28 +89,12 @@
 }
 
 #event-date small {
-  font-size: 0.9rem !important;
+  font-size : 0.9rem !important;
 }
 
 #event-date small .icon {
-  font-size: 1.3rem !important;
+  font-size : 1.3rem !important;
 }
-
-/*#event-date::after {
-  content : ' ';
-}
-
-#event-date::before {
-  content : ' ';
-}
-
-#event-date *::after {
-  content : ' ';
-}
-
-#event-date *::before {
-  content : ' ';
-}*/
 
 .counter {
   display : block !important;
@@ -123,7 +105,6 @@
   .shard {
     background-size : 100% !important;
   }
-
 }
 
 @media screen
@@ -132,16 +113,17 @@
     padding : 45px !important;
   }
 
-  #group h1 {
-    font-size: 8.5vw !important;
+  .group h1 {
+    font-size : 8.5vw !important;
   }
 
-  #group small {
-    font-size: 3vw !important;
+  .group small {
+    font-size : 3vw !important;
   }
 }
 
-@media (min-width: 600px) and (max-height: 650px) {
+@media (min-width: 600px)
+       and (max-height : 650px) {
   #logo {
     display : none !important;
   }
@@ -161,7 +143,11 @@
     padding : 0px !important;
   }
 
-  #group h1 {
+  .no-desk {
+    display : block;
+  }
+
+  .group h1 {
     font-size : 7vw;
   }
 
@@ -171,6 +157,19 @@
   }
 }
 
-/*#end {
-  font-size: 1.3rem;
-}*/
+@media screen and (min-width: 1101px) {
+  #content {
+    position  : relative;
+    top       : 50%;
+    width     : 100%;
+    transform : translateY(-50%);
+  }
+}
+@media screen and (max-width: 950px) {
+  #content {
+    position  : relative;
+    top       : 50%;
+    width     : 100%;
+    transform : translateY(-50%);
+  }
+}

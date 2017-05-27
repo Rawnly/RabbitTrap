@@ -48,8 +48,8 @@ $(document).ready(function() {
 
 
   $('.particles').particleground({
-    dotColor: '#161616',
-    lineColor: '#161616'
+    dotColor: '#222',
+    lineColor: '#222'
   })
 
   if ($(window).scrollTop() >= 826) {

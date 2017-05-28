@@ -3,9 +3,7 @@
  * <fedevitale99@gmail.com>
  */
 
-/* FONTS FACES */
-@import "fonts/hero-webfont/stylehseet.css";
-@import "fonts/minimal-webfont/stylehseet.css";
+@import 'webfonts/stylesheet.css';
 
 /* HTML ~ BODY */
 html:root {

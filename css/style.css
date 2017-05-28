@@ -6,43 +6,47 @@
 /* FONTS FACES */
 
 @font-face {
-  font-family: 'Infinity';
-  src: url('fonts/Infinity/infinity.ttf');
+  font-family : 'Minimal';
+  src         : url('fonts/Minimal/minimal.otf');
 }
 
 @font-face {
-  font-family: 'Hero';
-  src: url('fonts/Hero/hero.otf');
-  font-weight: normal;
+  font-family : 'Infinity';
+  src         : url('fonts/Infinity/infinity.ttf');
 }
 
 @font-face {
-  font-family: 'Hero';
-  src: url('fonts/Hero/hero-light.otf');
-  font-weight: 200;
+  font-family : 'Hero';
+  font-weight : normal;
+  src         : url('fonts/Hero/hero.otf');
 }
 
 @font-face {
-  font-family: 'Cabo';
-  src: url('fonts/cabo_rounded/Cabo-Rounded-Regular.otf');
-  font-style: normal;
+  font-family : 'Hero';
+  font-weight : 200;
+  src         : url('fonts/Hero/hero-light.otf');
 }
 
 @font-face {
-  font-family: 'Cabo';
-  src: url('fonts/cabo_rounded/Cabo-Rounded-Italic.otf');
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: 'Ancherr';
-  src: url('fonts/Ancherr/Ancherr.ttf');
+  font-family : 'Cabo';
+  font-style  : normal;
+  src         : url('fonts/cabo_rounded/Cabo-Rounded-Regular.otf');
 }
 
 @font-face {
-  font-family: 'Lugos';
-  src: url('fonts/Lugos/Lugos-regular.otf');
+  font-family : 'Cabo';
+  font-style  : italic;
+  src         : url('fonts/cabo_rounded/Cabo-Rounded-Italic.otf');
+}
+
+@font-face {
+  font-family : 'Ancherr';
+  src         : url('fonts/Ancherr/Ancherr.ttf');
+}
+
+@font-face {
+  font-family : 'Lugos';
+  src         : url('fonts/Lugos/Lugos-regular.otf');
 }
 
 @font-face {
@@ -66,29 +70,33 @@
 }
 
 @font-face {
-  font-family: 'Razed';
-  src: url('fonts/HBM Razed/HBM Razed Bold.ttf');
-  font-weight: bold;
-  font-style: normal;
+  font-family : 'Razed';
+  font-style  : normal;
+  font-weight : bold;
+  src         : url('fonts/HBM Razed/HBM Razed Bold.ttf');
 }
+
 @font-face {
-  font-family: 'Razed';
-  src: url('fonts/HBM Razed/HBM Razed Light.ttf');
-  font-weight: lighter;
-  font-style: normal;
+  font-family : 'Razed';
+  font-style  : normal;
+  font-weight : lighter;
+  src         : url('fonts/HBM Razed/HBM Razed Light.ttf');
 }
+
 @font-face {
-  font-family: 'Razed Trend';
-  src: url('fonts/HBM Razed/HBM Razed Trend.ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family : 'Razed Trend';
+  font-style  : normal;
+  font-weight : normal;
+  src         : url('fonts/HBM Razed/HBM Razed Trend.ttf');
 }
+
 @font-face {
-  font-family: 'Razed Galerie';
-  src: url('fonts/HBM Razed/HBM Razed Galerie.ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family : 'Razed Galerie';
+  font-style  : normal;
+  font-weight : normal;
+  src         : url('fonts/HBM Razed/HBM Razed Galerie.ttf');
 }
+
 /* FONTS */
 
 .raleway {
@@ -129,10 +137,11 @@
 /* HTML ~ BODY */
 
 html:root {
-    --color-darkbg: #111;
-    --color-darken-dark: #0D0C0C;
-    --color-overlay: #181818;
-    --color-mix: #121111;
+  --color-darkbg: #111;
+  --color-darken-dark: #0D0C0C;
+  --color-overlay: #181818;
+  --color-mix: #121111;
+  --color-secondary: #29D9C4;
 }
 
 body,
@@ -146,9 +155,10 @@ html {
 }
 
 body * {
-  color: #fff;
-  font-family: 'Infinity', sans-serif;
-  font-weight: 100;
+  color       : #fff;
+  font-family : 'Minimal',
+                sans-serif;
+  font-weight : 100;
 }
 
 body *::selection,
@@ -158,8 +168,8 @@ html *::selection {
 }
 
 html {
+  height     : 100%;
   background : #111111;
-  height: 100%;
 }
 
 /* HEADERS */
@@ -182,18 +192,20 @@ section {
   height   : 100vh;
 }
 
-
 footer {
-  width  : calc(100vw - 30px);
-  height: auto;
-  padding: 15px;
-  background: var(--color-mix);
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,.1);
+  width      : calc(100vw - 30px);
+  height     : auto;
+  padding    : 15px;
+  border-top : 1px solid rgba(255,255,255,.05);
+  background : var(--color-mix);
+  text-align : center;
 }
 
 footer .footer-inner {
-  color       : #fff;
+  color          : #fff;
+  font-family    : 'Cabo',
+                   sans-serif !important;
+  letter-spacing : 1px !important;
 }
 
 /* ME */
@@ -201,11 +213,13 @@ footer .footer-inner {
 .user {
   color           : #75D9D9;
   text-decoration : underline;
+  font-family     : 'Cabo',
+                    sans-serif !important;
   letter-spacing  : 2px;
 }
 
 .user::before {
-  content : '#';
+  content : '';
 }
 
 /* BACKGROUND */
@@ -255,6 +269,7 @@ footer .footer-inner {
 }
 
 /* CONTAINER */
+
 .container {
   z-index    : 1;
   position   : absolute;
@@ -291,20 +306,19 @@ footer .footer-inner {
 .ei-icn.light {
   fill : #fff;
 }
+
 .ei-icn.dark {
   fill : #111;
 }
 
-
 /* MISC */
+
 .shard {
   background      : url('assets/shards.jpg') top left repeat;
   background-size : 50vw !important;
 }
 
-
 /* MEDIA QUERIES */
-
 
 @media screen
        and (max-width : 500px) {
@@ -322,9 +336,10 @@ footer .footer-inner {
 
 @media screen
        and (max-width : 1100px) {
-         .no-mobile.restricted {
-           display : none !important;
-         }
+  .no-mobile.restricted {
+    display : none !important;
+  }
+
   .container.half {
     width   : 100%;
     padding : 0px !important;
@@ -332,17 +347,20 @@ footer .footer-inner {
 }
 
 .ei-icn.text {
-  top: 7px;
+  top : 7px;
 }
 
 .no-desk {
-  display: none;
+  display : none;
 }
-
 
 .container-group {
   position  : relative;
   top       : 50%;
   width     : 100%;
   transform : translateY(-50%);
+}
+
+lower {
+  text-transform : lowercase !important;
 }

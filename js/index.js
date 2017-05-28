@@ -18,8 +18,8 @@ $(document).ready(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  $('#days .counter').html(days)
-  $('#hours .counter').html(hours)
+  $('#days    .counter').html(days)
+  $('#hours   .counter').html(hours)
   $('#minutes .counter').html(minutes)
   $('#seconds .counter').html(seconds)
 

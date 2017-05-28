@@ -40,12 +40,19 @@
     <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/landpage.css">
-
-
   <!-- /CSS -->
+
+  <!--[if lt IE 9]>
+    <script>
+      document.createElement("lower");
+      document.createElement("hashtag");
+      document.createElement("vip");
+    </script>
+  <![endif]-->
+
   </head>
   <body>
-    <section id="presentation" data-presentation="true">
+    <section id="section1">
       <div class="container half left no-mobile restricted">
         <div class="left container-group">
           <h1 align="center" class="titles" id="organizers"> giovanni | wayote </h1>
@@ -62,32 +69,31 @@
             <div id="countdown">
               <div id="days">
                 <span class="counter"></span>
-                <span class="descr"> Days </span>
+                <span class="countdown-name"> Days </span>
               </div>
               <div id="hours">
                 <span class="counter"></span>
-                <span class="descr"> Hours </span>
+                <span class="countdown-name"> Hours </span>
               </div>
               <div id="minutes">
                 <span class="counter"></span>
-                <span class="descr"> Minutes </span>
+                <span class="countdown-name"> Minutes </span>
               </div>
               <div id="seconds">
                 <span class="counter"></span>
-                <span class="descr"> Seconds </span>
+                <span class="countdown-name"> Seconds </span>
               </div>
             </div>
           </div>
 
           <!-- LOGO -->
-          <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.56 191.43"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Logo</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><path class="cls-1" d="M152.88,1.46,151.27.69a7.06,7.06,0,0,0-6.09,0l-6.67,3.2L114.6,52.48l2.91,29h7.58L112.27,93.1l-2.14-40.23L135.4,5.65,107,37.32,85.65,78.52H70.92L49.54,37.32,21.17,5.65,46.43,52.87,44.29,93.1,31.47,81.44H39l2.91-29L18.06,3.9,11.39.69a7.05,7.05,0,0,0-6.09,0l-1.61.77A6.46,6.46,0,0,0,0,7.62L2.18,50.49a18.54,18.54,0,0,0,.44,3.16,45.2,45.2,0,0,0,9.46,19.07l27.55,32.81.19,11.85,4.08-2.72L47,115.83l5.25,6.41L54.2,134.1l-9.33.39L40,130.21l-2.14-6.8-1.94,4.28-1.84,1.75a48.09,48.09,0,0,0-9.43,12.44v24.36a10.63,10.63,0,0,0,3.11,7.52l9.32,9.32,12.24,1.75-5.83-6V160.14l15-12.44,4.08-19.24L55,107.67l12.92,20.4-4.18,19.24L47,161.89l1.17,16.91,7.38,9.72L62,191.43l13.21-5.25v-10.3L64.5,166.16l13.78,6.64,13.78-6.64-10.69,9.72v10.3l13.21,5.25,6.41-2.91,7.38-9.72,1.17-16.91L92.84,147.31l-4.18-19.24,12.92-20.4L94,128.46l4.08,19.24,15,12.44V178.8l-5.83,6,12.24-1.75,9.32-9.32a10.63,10.63,0,0,0,3.11-7.52V141.87a48.09,48.09,0,0,0-9.43-12.44l-1.84-1.75-1.94-4.28-2.14,6.8-4.86,4.28-9.33-.39,1.94-11.85,5.25-6.41,3.11-1.17,4.08,2.72.19-11.85,27.55-32.81a45.2,45.2,0,0,0,9.46-19.07,18.54,18.54,0,0,0,.44-3.16l2.17-42.87A6.46,6.46,0,0,0,152.88,1.46Z"/></g></g></svg>
+          <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.56 191.43"><defs></defs><title>Logo</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><path class="cls-1" d="M152.88,1.46,151.27.69a7.06,7.06,0,0,0-6.09,0l-6.67,3.2L114.6,52.48l2.91,29h7.58L112.27,93.1l-2.14-40.23L135.4,5.65,107,37.32,85.65,78.52H70.92L49.54,37.32,21.17,5.65,46.43,52.87,44.29,93.1,31.47,81.44H39l2.91-29L18.06,3.9,11.39.69a7.05,7.05,0,0,0-6.09,0l-1.61.77A6.46,6.46,0,0,0,0,7.62L2.18,50.49a18.54,18.54,0,0,0,.44,3.16,45.2,45.2,0,0,0,9.46,19.07l27.55,32.81.19,11.85,4.08-2.72L47,115.83l5.25,6.41L54.2,134.1l-9.33.39L40,130.21l-2.14-6.8-1.94,4.28-1.84,1.75a48.09,48.09,0,0,0-9.43,12.44v24.36a10.63,10.63,0,0,0,3.11,7.52l9.32,9.32,12.24,1.75-5.83-6V160.14l15-12.44,4.08-19.24L55,107.67l12.92,20.4-4.18,19.24L47,161.89l1.17,16.91,7.38,9.72L62,191.43l13.21-5.25v-10.3L64.5,166.16l13.78,6.64,13.78-6.64-10.69,9.72v10.3l13.21,5.25,6.41-2.91,7.38-9.72,1.17-16.91L92.84,147.31l-4.18-19.24,12.92-20.4L94,128.46l4.08,19.24,15,12.44V178.8l-5.83,6,12.24-1.75,9.32-9.32a10.63,10.63,0,0,0,3.11-7.52V141.87a48.09,48.09,0,0,0-9.43-12.44l-1.84-1.75-1.94-4.28-2.14,6.8-4.86,4.28-9.33-.39,1.94-11.85,5.25-6.41,3.11-1.17,4.08,2.72.19-11.85,27.55-32.81a45.2,45.2,0,0,0,9.46-19.07,18.54,18.54,0,0,0,.44-3.16l2.17-42.87A6.46,6.46,0,0,0,152.88,1.46Z"/></g></g></svg>
 
           <!-- DATE -->
           <p id="event-date">
-            September 21 2017 <br>
+            September 21<lower>st</lower> 2017 <br>
             <small class="hour">
-              00:00 - <i id="end" class="icon ion-ios-infinite ei-icn text"></i>
-              <!-- <i data-icon="ei-spinner-3" class="ei-icn text" data-size="s"></i> -->
+              00:00 - BLACKOUT
             </small>
           </p>
         </div>
@@ -97,11 +103,41 @@
 
       <div class="background" data-color="dark"></div>
     </section>
-    <section class="no-desk">
+    <section id="section2" class="no-desk">
       <div class="container">
-        <div class="left container-group">
-          <h1 align="center" class="titles" id="organizers"> giovanni | wayote </h1>
-          <h4 align="center" class="titles" id="ospiti"> orbe | giulia </h4>
+
+        <div class="descr">
+          <!-- <h1 class="authors" id="organizers"> giovanni | wayote </h1>
+          <h4 class="authors" id="ospiti"> orbe | giulia </h4> -->
+
+          <p align="justify">
+            we like to blast loud music and enjoy parties in
+            beautiful venues without being constantly interrupted
+            by police. so we explored Segovia’s darkest and most
+            forgotten areas, searching for the perfect place. that’s
+            when we found a unique spot where we’re gonna throw one
+            of the most memorable events of your college years.
+          </p>
+
+          <p aling="center">
+            <p> heavy bass, neon lights and loads of alcohol. </p>
+            <p> this is claustrophobia, a once in a lifetime rave experience. </p>
+
+            <p>
+              claustrophobia, the rave<br><br>
+              ~ open shot bar ~
+            </p>
+
+            <p>
+              first 100 tickets → eur. 10<br>
+              more  → eur. 20<br>
+              contact for tables &amp; <vip>VIP</vip>
+            </p>
+
+            <br>
+
+            <hashtag class="padded">followtherabbit</hashtag>
+          </p>
         </div>
       </div>
     </section>

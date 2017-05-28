@@ -4,138 +4,10 @@
  */
 
 /* FONTS FACES */
-
-@font-face {
-  font-family : 'Minimal';
-  src         : url('fonts/Minimal/minimal.otf');
-}
-
-@font-face {
-  font-family : 'Infinity';
-  src         : url('fonts/Infinity/infinity.ttf');
-}
-
-@font-face {
-  font-family : 'Hero';
-  font-weight : normal;
-  src         : url('fonts/Hero/hero.otf');
-}
-
-@font-face {
-  font-family : 'Hero';
-  font-weight : 200;
-  src         : url('fonts/Hero/hero-light.otf');
-}
-
-@font-face {
-  font-family : 'Cabo';
-  font-style  : normal;
-  src         : url('fonts/cabo_rounded/Cabo-Rounded-Regular.otf');
-}
-
-@font-face {
-  font-family : 'Cabo';
-  font-style  : italic;
-  src         : url('fonts/cabo_rounded/Cabo-Rounded-Italic.otf');
-}
-
-@font-face {
-  font-family : 'Ancherr';
-  src         : url('fonts/Ancherr/Ancherr.ttf');
-}
-
-@font-face {
-  font-family : 'Lugos';
-  src         : url('fonts/Lugos/Lugos-regular.otf');
-}
-
-@font-face {
-  font-family : 'Flexure';
-  src         : url('fonts/HBM Flexure/HBM Flexure.otf');
-}
-
-@font-face {
-  font-family : 'Forista';
-  src         : url('fonts/HBM Forista/HBM Forista.ttf');
-}
-
-@font-face {
-  font-family : 'Forista Sketchy';
-  src         : url('fonts/HBM Forista/HBM Forista Sketchy.ttf');
-}
-
-@font-face {
-  font-family : 'Forista Woody';
-  src         : url('fonts/HBM Forista/HBM Forista Woody.ttf');
-}
-
-@font-face {
-  font-family : 'Razed';
-  font-style  : normal;
-  font-weight : bold;
-  src         : url('fonts/HBM Razed/HBM Razed Bold.ttf');
-}
-
-@font-face {
-  font-family : 'Razed';
-  font-style  : normal;
-  font-weight : lighter;
-  src         : url('fonts/HBM Razed/HBM Razed Light.ttf');
-}
-
-@font-face {
-  font-family : 'Razed Trend';
-  font-style  : normal;
-  font-weight : normal;
-  src         : url('fonts/HBM Razed/HBM Razed Trend.ttf');
-}
-
-@font-face {
-  font-family : 'Razed Galerie';
-  font-style  : normal;
-  font-weight : normal;
-  src         : url('fonts/HBM Razed/HBM Razed Galerie.ttf');
-}
-
-/* FONTS */
-
-.raleway {
-  font-family : 'Raleway',
-                sans-serif;
-}
-
-.lobster {
-  font-family : 'Lobster',
-                cursive;
-}
-
-.pacifico {
-  font-family : 'Pacifico',
-                cursive;
-}
-
-.flexure {
-  font-family : 'Flexure',
-                sans-serif;
-}
-
-.forista {
-  font-family : 'Forista',
-                sans-serif;
-}
-
-.forista-sketchy {
-  font-family : 'Forista Sketchy',
-                sans-serif;
-}
-
-.forista-woody {
-  font-family : 'Forista Woody',
-                sans-serif;
-}
+@import "fonts/hero-webfont/stylehseet.css";
+@import "fonts/minimal-webfont/stylehseet.css";
 
 /* HTML ~ BODY */
-
 html:root {
   --color-darkbg: #111;
   --color-darken-dark: #0D0C0C;
@@ -164,7 +36,8 @@ body * {
 body *::selection,
 html *::selection {
   color      : var(--color-lines);
-  background : var(--color-overlay);
+  font-weight: 800;
+  background : var(--color-secondary);
 }
 
 html {

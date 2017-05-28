@@ -106,8 +106,8 @@
 #section2 {
   border-top : 1px solid rgba(255,255,255,.05);
   background : var(--color-darken-dark) !important;
-  padding: 15px 0px;
-  height: calc(100vh - 30px) !important;
+  padding: 25px 0px;
+  height: calc(100vh - 50px) !important;
 }
 
 #section2 .container {

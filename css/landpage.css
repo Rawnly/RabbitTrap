@@ -107,6 +107,7 @@
   border-top : 1px solid rgba(255,255,255,.05);
   background : var(--color-darken-dark) !important;
   padding: 15px 0px;
+  height: calc(100vh - 30px) !important;
 }
 
 #section2 .container {
@@ -203,7 +204,7 @@ vip {
 
   #countdown {
     width     : 70% !important;
-    font-size : 3vw;
+    font-size : 3.5vw;
   }
 }
 

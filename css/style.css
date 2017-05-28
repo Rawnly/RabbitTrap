@@ -149,14 +149,14 @@ html {
   width       : 100vw;
   margin      : 0px;
   padding     : 0px;
-  font-family : 'Raleway',
+  font-family : 'Hero',
                 sans-serif;
   font-size   : 18px;
 }
 
 body * {
   color       : #fff;
-  font-family : 'Minimal',
+  font-family : 'Hero', 'Minimal',
                 sans-serif;
   font-weight : 100;
 }
@@ -197,7 +197,7 @@ footer {
   height     : auto;
   padding    : 15px;
   border-top : 1px solid rgba(255,255,255,.05);
-  background : var(--color-mix);
+  background : var(--color-darken-dark);
   text-align : center;
 }
 
